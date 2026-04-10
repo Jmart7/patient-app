@@ -18,9 +18,6 @@ npm run dev
 
 # Run tests
 npm run test:run
-
-# Build for production
-npm run build
 ```
 
 The app fetches patient data from a remote API on startup. No additional setup or environment variables are needed.
