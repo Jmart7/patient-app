@@ -52,30 +52,27 @@ The app fetches patient data from a remote API on startup. No additional setup o
 
 ## Project structure
 
+```
 src/
 ├── components/
-│   ├── ui/              # Reusable generic components
-│   │   ├── Avatar       # Image with initials fallback
-│   │   ├── Button       # Multi-variant button
-│   │   ├── ConfirmDialog # Destructive action confirmation
-│   │   ├── Input        # Text input with label and error state
-│   │   ├── Modal        # Overlay dialog with keyboard support
-│   │   ├── SearchBar    # Search input with icon
-│   │   └── TextArea     # Multiline input with label and error state
-│   └── patients/        # Domain-specific components
-│       ├── PatientCard  # Individual patient display
-│       ├── PatientForm  # Create/edit form with validation
-│       └── PatientList  # Main view orchestrating everything
-├── context/
-│   └── NotificationContext  # Toast notification system
-├── hooks/
-│   └── usePatients      # Patient CRUD state with useReducer
-├── services/
-│   └── api              # API fetch layer
-├── types/
-│   └── patient          # TypeScript interfaces
-└── utils/
-└── validation       # Form validation logic
+│   ├── ui/                  — Reusable generic components
+│   │   ├── Avatar           — Image with initials fallback
+│   │   ├── Button           — Multi-variant button
+│   │   ├── ConfirmDialog    — Destructive action confirmation
+│   │   ├── Input            — Text input with label and error state
+│   │   ├── Modal            — Overlay dialog with keyboard support
+│   │   ├── SearchBar        — Search input with icon
+│   │   └── TextArea         — Multiline input with label and error state
+│   └── patients/            — Domain-specific components
+│       ├── PatientCard      — Individual patient display
+│       ├── PatientForm      — Create/edit form with validation
+│       └── PatientList      — Main view orchestrating everything
+├── context/                 — Toast notification system
+├── hooks/                   — usePatients, useNotify
+├── services/                — API fetch layer
+├── types/                   — TypeScript interfaces
+└── utils/                   — Form validation logic
+```
 
 ## Design decisions
 
